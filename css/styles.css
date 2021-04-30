@@ -475,6 +475,7 @@ body {
 }
 
 .portfolio-list .item {
+  display: flex;
   width: 370px;
   flex-basis: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
@@ -511,15 +512,14 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
-.large-card {
+.card-link {
+  display: block;
   transition-property: box-sizing, border, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-link:hover .large-card,
-.card-link:focus .large-card {
-  box-sizing: border-box;
-  border: 1px solid #eeeeee;
+.card-link:hover,
+.card-link:focus {
   box-shadow: var(--card-shadow);
 }
 
@@ -546,7 +546,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.large-card:hover .overlay {
+.card-link:hover .overlay {
   transform: translateY(0);
 }
 
